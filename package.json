@@ -1,0 +1,32 @@
+{
+    "name": "@pcmnac/github-issues-table",
+    "version": "0.1.0",
+    "dependencies": {
+        "semantic-ui-css": "^2.3.3",
+        "semantic-ui-react": "^0.82.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build2": "react-scripts build",
+        "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "react": "^16.4.2",
+        "react-dom": "^16.4.2",
+        "react-scripts": "1.1.4"
+    },
+    "peerDependencies": {
+        "react": ">= 16.4.2",
+        "react-dom": ">= 16.4.2"
+    },
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "files": [ "dist", "README.md" ],
+    "repository": {
+        "type": "git",
+        "url": "URL_OF_YOUR_REPOSITORY"
+    }
+}

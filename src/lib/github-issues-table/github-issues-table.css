@@ -1,0 +1,14 @@
+
+.custom-label {
+    display: inline;
+    margin: 0 1px;
+}
+
+.custom-label .ui.label {
+    background-color: inherit;
+}
+
+.custom-label .ui.label a {
+    color: #000;
+    opacity: .7;
+}
