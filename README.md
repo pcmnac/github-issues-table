@@ -36,3 +36,8 @@ const App = () => (
 
 export default App;
 ```
+
+## Local test
+```
+npm start
+```
