@@ -2,8 +2,6 @@
     "name": "@pcmnac/github-issues-table",
     "version": "0.1.0",
     "dependencies": {
-        "semantic-ui-css": "^2.3.3",
-        "semantic-ui-react": "^0.82.2"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -16,11 +14,15 @@
         "babel-cli": "^6.26.0",
         "react": "^16.4.2",
         "react-dom": "^16.4.2",
-        "react-scripts": "1.1.4"
+        "react-scripts": "1.1.4",
+        "semantic-ui-css": "^2.3.3",
+        "semantic-ui-react": "^0.82.2"
     },
     "peerDependencies": {
         "react": ">= 16.4.2",
-        "react-dom": ">= 16.4.2"
+        "react-dom": ">= 16.4.2",
+        "semantic-ui-css": ">= 2.3.3",
+        "semantic-ui-react": ">= 0.82.2"
     },
     "main": "dist/index.js",
     "module": "dist/index.js",
