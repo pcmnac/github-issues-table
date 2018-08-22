@@ -13,6 +13,12 @@ class GithubIssuesTable extends Component {
         this.loadContent();
     }
 
+    componentDidUpdate(prevProps) {
+        if (this.props.user !== prevProps.user || this.props.repo !== prevProps.repo) {
+            this.loadContent();
+        }
+    }
+
     loadContent = () => {
         const { user, repo, delay = 500 } = this.props;
 
