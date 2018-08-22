@@ -87,7 +87,7 @@ const GithubIssuesTablePresenter = ({
     }
 
     return (
-        <Table className="result-table" celled striped>
+        <Table className="result-table" celled striped sortable>
             <Table.Header>
                 <Table.Row>
                     <Table.HeaderCell textAlign="center">Issue	Number</Table.HeaderCell>
