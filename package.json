@@ -1,6 +1,6 @@
 {
     "name": "@pcmnac/github-issues-table",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "dependencies": {},
     "scripts": {
         "start": "react-scripts start",
