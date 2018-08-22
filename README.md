@@ -2,7 +2,7 @@
 
 This is a simple compenent that shows the issues of a particular GitHub project
 
-# Setup
+## Setup
 
 Install the dependency
 ```
@@ -21,7 +21,7 @@ Import CSS in your project
 import 'semantic-ui-css/semantic.min.css';
 ```
 
-# Usage Example
+## Usage Example
 
 ```jsx
 import React from 'react';
