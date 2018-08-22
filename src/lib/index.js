@@ -1,1 +1,1 @@
-export { default as GithubIssuesTable } from './github-issues-table';
+export { default } from './github-issues-table';
