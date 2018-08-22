@@ -6,7 +6,7 @@ This is a simple compenent that shows the issues of a particular GitHub project
 
 Install the dependency
 ```
-npm i -S "@pcmnac/github-issues-table
+npm i -S @pcmnac/github-issues-table
 ```
 
 You also have to install peer dependencies
