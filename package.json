@@ -1,8 +1,7 @@
 {
     "name": "@pcmnac/github-issues-table",
-    "version": "0.1.0",
-    "dependencies": {
-    },
+    "version": "0.1.1",
+    "dependencies": {},
     "scripts": {
         "start": "react-scripts start",
         "build2": "react-scripts build",
@@ -26,7 +25,10 @@
     },
     "main": "dist/index.js",
     "module": "dist/index.js",
-    "files": [ "dist", "README.md" ],
+    "files": [
+        "dist",
+        "README.md"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/pcmnac/github-issues-table.git"
