@@ -23,7 +23,7 @@ class App extends Component {
                 <Button onClick={() => this.setRepo('react')}>React</Button>
                 <Button onClick={() => this.setRepo('create-react-app')}>CRA</Button>
                 <br/>
-                {user} / {repo}
+                <h1>{user} / {repo}</h1>
                 <br/>
                 <GithubIssuesTable user={user} repo={repo} />
             </div>

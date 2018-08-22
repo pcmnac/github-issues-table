@@ -40,11 +40,11 @@ const IssueRow = ({
             {title}
         </Table.Cell>
         
-        <Table.Cell width={1}>
+        <Table.Cell>
             {new Date(created_at).toLocaleString()}
         </Table.Cell>
         
-        <Table.Cell width={1}>
+        <Table.Cell>
             {new Date(updated_at).toLocaleString()}
         </Table.Cell>
         
@@ -90,10 +90,10 @@ const GithubIssuesTablePresenter = ({
         <Table className="result-table" celled striped sortable>
             <Table.Header>
                 <Table.Row>
-                    <Table.HeaderCell textAlign="center">Issue	Number</Table.HeaderCell>
+                    <Table.HeaderCell width={1} textAlign="center">Issue	Number</Table.HeaderCell>
                     <Table.HeaderCell>Title</Table.HeaderCell>
-                    <Table.HeaderCell>Created	At</Table.HeaderCell>
-                    <Table.HeaderCell>Updated	At</Table.HeaderCell>
+                    <Table.HeaderCell width={1}>Created	At</Table.HeaderCell>
+                    <Table.HeaderCell width={1}>Updated	At</Table.HeaderCell>
                     <Table.HeaderCell>Labels</Table.HeaderCell>
                     <Table.HeaderCell textAlign="center">State</Table.HeaderCell>
                 </Table.Row>

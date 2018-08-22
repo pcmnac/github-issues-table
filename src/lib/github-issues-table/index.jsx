@@ -20,7 +20,7 @@ class GithubIssuesTable extends Component {
     }
 
     loadContent = () => {
-        const { user, repo, delay = 500 } = this.props;
+        const { user, repo, delay = 200 } = this.props;
 
         if (!user || !repo) {
             this.setState({
@@ -36,6 +36,7 @@ class GithubIssuesTable extends Component {
             setTimeout(() => {
                 fetch(`https://api.github.com/repos/${user}/${repo}/issues`)
                 .then(res => {
+                    // github api always provide a json response, even on error situations.
                     return res.json().then(data => {
                         if (!res.ok) throw new Error(data.message);
                         return data;
