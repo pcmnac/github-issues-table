@@ -86,6 +86,14 @@ const GithubIssuesTablePresenter = ({
         )
     }
 
+    if (data.length === 0) {
+        return (
+            <Message warning>
+                <Message.Header>There are no issues on this project</Message.Header>
+            </Message>
+        )
+    }
+
     return (
         <Table className="result-table" celled striped sortable>
             <Table.Header>
