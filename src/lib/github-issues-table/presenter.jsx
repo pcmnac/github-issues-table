@@ -100,8 +100,8 @@ const GithubIssuesTablePresenter = ({
                 <Table.Row>
                     <Table.HeaderCell width={1} textAlign="center">Issue	Number</Table.HeaderCell>
                     <Table.HeaderCell>Title</Table.HeaderCell>
-                    <Table.HeaderCell width={1}>Created	At</Table.HeaderCell>
-                    <Table.HeaderCell width={1}>Updated	At</Table.HeaderCell>
+                    <Table.HeaderCell width={1}>Created At</Table.HeaderCell>
+                    <Table.HeaderCell width={1}>Updated At</Table.HeaderCell>
                     <Table.HeaderCell>Labels</Table.HeaderCell>
                     <Table.HeaderCell textAlign="center">State</Table.HeaderCell>
                 </Table.Row>
