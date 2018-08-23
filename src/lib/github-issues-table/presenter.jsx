@@ -98,7 +98,7 @@ const GithubIssuesTablePresenter = ({
         <Table className="result-table" celled striped sortable>
             <Table.Header>
                 <Table.Row>
-                    <Table.HeaderCell width={1} textAlign="center">Issue	Number</Table.HeaderCell>
+                    <Table.HeaderCell width={1} textAlign="center">Issue Number</Table.HeaderCell>
                     <Table.HeaderCell>Title</Table.HeaderCell>
                     <Table.HeaderCell width={1}>Created At</Table.HeaderCell>
                     <Table.HeaderCell width={1}>Updated At</Table.HeaderCell>
