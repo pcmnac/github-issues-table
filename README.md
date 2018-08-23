@@ -1,8 +1,12 @@
-# Github Issues Table
+# GitHub Issues Table
 
-This is a simple compenent that shows the issues of a particular GitHub project
+This is a simple component that shows the issues of a particular GitHub project
 
-## Setup
+## Usage
+
+This section shows how to use this component.
+
+### Setup
 
 Install the dependency
 ```
@@ -21,7 +25,7 @@ Import CSS in your project
 import 'semantic-ui-css/semantic.min.css';
 ```
 
-## Usage Example
+### Example
 
 ```jsx
 import React from 'react';
@@ -37,7 +41,23 @@ const App = () => (
 export default App;
 ```
 
-## Local test
+## Contribute
+
+This section shows the basics to maintain this component
+
+### Local test
 ```
+git clone https://github.com/pcmnac/github-issues-table.git
+cd github-issues-table
+npm i
 npm start
 ```
+### Build and Publish
+
+```
+npm version x.y.z
+npm publish
+```
+
+
+
