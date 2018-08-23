@@ -1,6 +1,8 @@
 # GitHub Issues Table
 
-This is a simple component that shows the issues of a particular GitHub project
+This is a simple component that shows the issues of a particular GitHub repository
+
+![GitHub Issues Table](assets/github-issues-table.png)
 
 ## Usage
 
