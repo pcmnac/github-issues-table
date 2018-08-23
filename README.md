@@ -2,6 +2,8 @@
 
 This is a simple component that shows the issues of a particular GitHub project
 
+![GitHub Issues Table](assets/github-issues-table.png)
+
 ## Usage
 
 This section shows how to use this component.
