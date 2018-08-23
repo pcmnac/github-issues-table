@@ -1,5 +1,5 @@
 import React from 'react';
-import { Label, Table, Dimmer, Loader, Message } from 'semantic-ui-react'
+import { Label, Table, Dimmer, Loader, Message, Form, Icon } from 'semantic-ui-react'
 import './github-issues-table.css';
 
 // Custom label to show in IssuesTable
@@ -68,6 +68,8 @@ const GithubIssuesTablePresenter = ({
     loading,
     error,
     errorMessage,
+    filter,
+    onFilterChange,
 }) => {
     if (loading) {
         return (
@@ -94,24 +96,40 @@ const GithubIssuesTablePresenter = ({
         )
     }
 
+    let issues = data;
+    if (filter) {
+        issues = issues.filter(issue => issue.title.toLowerCase().indexOf(filter.toLowerCase()) !== -1);
+    }
+
     return (
-        <Table className="result-table" celled striped sortable>
-            <Table.Header>
-                <Table.Row>
-                    <Table.HeaderCell width={1} textAlign="center">Issue Number</Table.HeaderCell>
-                    <Table.HeaderCell>Title</Table.HeaderCell>
-                    <Table.HeaderCell width={1}>Created At</Table.HeaderCell>
-                    <Table.HeaderCell width={1}>Updated At</Table.HeaderCell>
-                    <Table.HeaderCell>Labels</Table.HeaderCell>
-                    <Table.HeaderCell textAlign="center">State</Table.HeaderCell>
-                </Table.Row>
-            </Table.Header>
-            <Table.Body>
-                {
-                    data.map(issue => <IssueRow key={issue.id} {...issue} user={user} repo={repo} />)
-                }
-            </Table.Body>
-        </Table>
+        <div>
+            <Form.Field inline textAlign="rigth" >
+                <Form.Input
+                    fluid
+                    icon="search"
+                    placeholder='search for issue text'
+                    onChange={onFilterChange}
+                    value={filter}
+                />
+            </Form.Field>
+            <Table className="result-table" celled striped sortable>
+                <Table.Header>
+                    <Table.Row>
+                        <Table.HeaderCell width={1} textAlign="center">Issue Number</Table.HeaderCell>
+                        <Table.HeaderCell>Title</Table.HeaderCell>
+                        <Table.HeaderCell width={1}>Created At</Table.HeaderCell>
+                        <Table.HeaderCell width={1}>Updated At</Table.HeaderCell>
+                        <Table.HeaderCell>Labels</Table.HeaderCell>
+                        <Table.HeaderCell textAlign="center">State</Table.HeaderCell>
+                    </Table.Row>
+                </Table.Header>
+                <Table.Body>
+                    {
+                        issues.map(issue => <IssueRow key={issue.id} {...issue} user={user} repo={repo} />)
+                    }
+                </Table.Body>
+            </Table>
+        </div>
     );
 }
 

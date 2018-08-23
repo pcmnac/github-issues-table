@@ -7,6 +7,7 @@ class GithubIssuesTable extends Component {
         loading: false,
         error: false,
         errorMessage: null,
+        filter: '',
     }
 
     componentDidMount() {
@@ -17,6 +18,12 @@ class GithubIssuesTable extends Component {
         if (this.props.user !== prevProps.user || this.props.repo !== prevProps.repo) {
             this.loadContent();
         }
+    }
+
+    handleFilter = e => {
+        this.setState({
+            filter: e.target.value,
+        });
     }
 
     loadContent = () => {
@@ -64,7 +71,7 @@ class GithubIssuesTable extends Component {
 
     render() {
         return (
-            <Presenter {...this.state} {...this.props} />
+            <Presenter {...this.state} {...this.props} onFilterChange={this.handleFilter} />
         );
     }
 }
